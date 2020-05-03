@@ -1,0 +1,26 @@
+
+
+Test methods NEVER EVER HAVE if's, loops etc.
+
+
+Should always be 10 lines or smaller.
+
+
+=================
+Naming
+=================
+
+For every project there should be separate project for testing e.g. TestNinja -> TestNinja.UnitTests
+For every class there should be test class e.g. Reservation -> ReservationTests (plural)
+
+Naming convention is as follows: [MethodName]_[TestingScenario]_[ExpectedBehaviour]
+
+
+Number of tests for method should be number of execution (return) paths. For example:
+        public int Add(int a, int b)
+        { 
+            return a + b;
+        }
+Has only one execution path (one return, no if/else, switch etc.) so we need only one test.
+
+
